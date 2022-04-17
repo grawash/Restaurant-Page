@@ -1,7 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: rgba(173, 195, 214, 0.575);
+    display: flex;
+    background: url('./restaurant.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.header{
+    display: flex;
+    background-color: black;
+    padding: 5px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+h1{
+    color: white;
+    font-size: 3rem;
+
+}
+.buttonSection{
+    margin-left: auto;
+    margin-right: 25px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+.buttons{
+    font-size: 1.2rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+.buttons:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-basis: auto;
+    flex-grow:3;
+    min-width: 80%;
+    max-width: 90%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding:25px;
+
+}
+.page>h1{
+    font-size: 4rem;
+}
+.pageText{
+    margin-top:50px;
+    font-size: 2rem;
+    text-align: center;
+}
+.menuBtn{
+    border: none;
+    border-radius: 40px;
+    background-color: rgba(243, 107, 44, 0.973);
+    font-size: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 1rem 3rem;
+    color:white;
+}
+.menuBtn:hover{
+    cursor: pointer;
+    /* font-weight: bold; */
+    padding:1.1rem 3.1rem;
+    box-shadow: 0px 3px 10px rgb(138, 135, 135);
+}
+.menuItem{
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-template-rows: (100px,350px);
+    width: 100%;
+    gap:20px;
+    text-align: center;
+    font-size: 2rem;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    border:5px solid black;
+    box-shadow: 0px 3px 10px rgb(138, 135, 135);
+    border-radius: 30px;
+    align-items: center;    
+}
+.itemBtn{
+    font-size: 2rem;
+    background-color: rgba(243, 107, 44, 0.973);
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    color:white;
+    margin:20px;
+}
+.itemBtn:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 10px rgb(138, 135, 135);
+}
+.menuImg{
+    width:80%;
+}
+.contacts{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap:20px;
+    grid-template-rows: minmax(100px,300px);
+    border: 5px solid black;
+    box-shadow: 0px 3px 10px rgb(109, 107, 107);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 2rem;
+    align-items: center;
+}
+.footer{
+    height: 2rem;
+    background-color: black;
+    min-width: 100%;
+}
+.footerText{
+    color: white;
+    text-align: center;
 }
